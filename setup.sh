@@ -2,6 +2,7 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+
 sudo apt-get update
 sudo apt-get install -y python-software-properties python g++ make
 sudo add-apt-repository -y ppa:chris-lea/node.js
@@ -24,6 +25,9 @@ sudo apt-get install -y emacs24 emacs24-el emacs24-common-non-dfsg
 
 # Install the Heroku toolbelt
 wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+# Set git email
+git config --global user.email doug.smith.mail@gmail.com
 
 # git pull and install dotfiles as well
 #cd $HOME
